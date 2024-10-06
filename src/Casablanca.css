@@ -1,0 +1,40 @@
+/* تنسيق قسم معلومات مطعم Casablanca */
+.casablanca-info {
+    background-color:  #f4cb03; /* لون خلفية فاتح */
+    padding: 40px 20px; /* مساحة داخلية */
+    text-align: center; /* محاذاة النص إلى المركز */
+    margin: 20px 20px; /* هوامش علوية وسفلية */
+    border-radius: 8px; /* زوايا دائرية */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل لجعل العنصر بارزاً */
+  }
+  
+  .casablanca-info h2 {
+    font-size: 28px; /* حجم خط عنوان القسم */
+    color: #646b1d;; /* لون نص العنوان */
+    margin-bottom: 20px; /* مسافة أسفل العنوان */
+  }
+  
+  .casablanca-info p {
+    font-size: 18px; /* حجم خط الفقرة */
+    color: #646b1d;; /* لون النص */
+    margin-bottom: 20px; /* مسافة أسفل الفقرة */
+  }
+  
+  .casablanca-info img {
+    width: 100%; /* عرض الصورة ليتناسب مع عرض القسم */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    border-radius: 8px; /* زوايا دائرية للصورة */
+    max-width: 600px; /* تحديد عرض أقصى للصورة */
+  }
+  
+  /* استجابة الشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .casablanca-info h2 {
+      font-size: 24px; /* تقليل حجم الخط على الشاشات الصغيرة */
+    }
+  
+    .casablanca-info p {
+      font-size: 16px; /* تقليل حجم النص */
+    }
+  }
+  

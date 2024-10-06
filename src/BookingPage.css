@@ -1,0 +1,41 @@
+/* تنسيق صفحة الحجز */
+.booking-page {
+  max-width: 600px; /* الحد الأقصى لعرض الصفحة */
+  margin: 0 auto; /* توسيط الصفحة */
+  padding: 20px; /* إضافة مساحة داخلية */
+  text-align: center; /* توسيط النص */
+  background-color: #f8f8f8; /* لون خلفية خفيف */
+  border-radius: 8px; /* زوايا مستديرة */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* ظل خفيف لإضفاء العمق */
+}
+
+.booking-page h1 {
+  color: #333; /* لون النص */
+  margin-bottom: 10px; /* مساحة سفلية */
+}
+
+.booking-page p {
+  color: #555; /* لون نص الفقرة */
+  margin-bottom: 20px; /* مساحة سفلية */
+}
+
+.form-container {
+  display: flex; /* استخدام الفليكس لتمركز النموذج */
+  justify-content: center; /* توسيط النموذج */
+  align-items: center; /* عمودياً */
+}
+
+/* وسائل الإعلام لتصميم متجاوب */
+@media (max-width: 768px) {
+  .booking-page {
+    padding: 15px; /* تقليل المساحة الداخلية على الشاشات الصغيرة */
+  }
+
+  .booking-page h1 {
+    font-size: 1.5em; /* تعديل حجم الخط للعناوين */
+  }
+
+  .booking-page p {
+    font-size: 1em; /* تعديل حجم الخط للفقرة */
+  }
+}

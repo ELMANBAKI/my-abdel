@@ -1,0 +1,73 @@
+.booking-form {
+    max-width: 400px; /* تحديد الحد الأقصى لعرض النموذج */
+    margin: 0 auto; /* توسيط النموذج */
+    padding: 20px; /* إضافة مساحة داخلية */
+    border: 1px solid #ddd; /* حدود خفيفة */
+    border-radius: 8px; /* زوايا مستديرة */
+    background-color: #f9f9f9; /* لون خلفية خفيف */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* ظل خفيف لإضفاء العمق */
+    width: 90%; /* عرض النموذج 90% من عرض الشاشة */
+  }
+  
+  .booking-form h2 {
+    text-align: center; /* توسيط العنوان */
+    color: #333; /* لون النص */
+    margin-bottom: 20px; /* مساحة سفلية */
+  }
+  
+  .booking-form label {
+    display: block; /* جعل كل ملصق في سطر منفصل */
+    margin-bottom: 10px; /* مساحة بين الملصقات */
+    font-weight: bold; /* جعل النص غامق */
+  }
+  
+  .booking-form input[type="text"],
+  .booking-form input[type="date"],
+  .booking-form input[type="number"],
+  .booking-form select {
+    width: 100%; /* جعل عرض المدخلات 100% */
+    padding: 10px; /* إضافة مساحة داخلية */
+    margin-top: 5px; /* مساحة فوق المدخلات */
+    border: 1px solid #ccc; /* حدود خفيفة */
+    border-radius: 4px; /* زوايا مستديرة */
+  }
+  
+  .booking-form button {
+    width: 100%; /* جعل زر الإرسال 100% */
+    padding: 10px; /* إضافة مساحة داخلية */
+    background-color: #4caf50; /* لون الخلفية للزر */
+    color: white; /* لون النص في الزر */
+    border: none; /* إزالة الحدود */
+    border-radius: 4px; /* زوايا مستديرة */
+    font-size: 16px; /* حجم الخط */
+    cursor: pointer; /* تغيير شكل المؤشر عند التمرير فوق الزر */
+    transition: background-color 0.3s; /* تأثير الانتقال */
+  }
+  
+  .booking-form button:hover {
+    background-color: #45a049; /* تغيير لون الزر عند التمرير فوقه */
+  }
+  
+  /* وسائل الإعلام لتصميم متجاوب */
+  @media (max-width: 768px) {
+    .booking-form {
+      width: 95%; /* زيادة عرض النموذج على الشاشات الصغيرة */
+      padding: 15px; /* تقليل المساحة الداخلية */
+    }
+  
+    .booking-form h2 {
+      font-size: 1.5em; /* تعديل حجم الخط للعناوين */
+    }
+  
+    .booking-form input[type="text"],
+    .booking-form input[type="date"],
+    .booking-form input[type="number"],
+    .booking-form select {
+      padding: 8px; /* تقليل المساحة الداخلية في المدخلات */
+    }
+  
+    .booking-form button {
+      padding: 8px; /* تقليل المساحة الداخلية في الزر */
+    }
+  }
+  

@@ -1,0 +1,71 @@
+/* تنسيق القسم الرئيسي */
+.call-to-action {
+  background-color: #f4cb03; /* لون الخلفية */
+  text-align: center;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 8px; /* زوايا دائرية للقسم */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+}
+
+.call-to-action h1 {
+  font-size: 36px;
+  color: #646b1d; /* لون النص */
+  margin-bottom: 20px;
+}
+
+.call-to-action p {
+  font-size: 18px;
+  color: #646b1d; /* لون النص الرمادي */
+  margin-bottom: 30px;
+}
+
+.call-to-action button {
+  background-color: #45390d; /* لون الخلفية */
+  color: #f8e408;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.call-to-action button:hover {
+  background-color: #333; /* تغيير اللون عند التمرير */
+  color: #f4cb03;
+  transform: scale(1.05); /* تكبير الزر قليلاً عند التمرير */
+}
+
+/* الاستجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .call-to-action h1 {
+    font-size: 28px;
+  }
+
+  .call-to-action p {
+    font-size: 16px;
+  }
+
+  .call-to-action button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* استجابة لشاشات الهواتف المحمولة */
+@media (max-width: 480px) {
+  .call-to-action h1 {
+    font-size: 24px;
+  }
+
+  .call-to-action p {
+    font-size: 14px;
+  }
+
+  .call-to-action button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

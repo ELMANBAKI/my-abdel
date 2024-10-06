@@ -1,0 +1,54 @@
+/* تنسيق القسم الرئيسي */
+.specializations {
+  background-color: #ffea04; /* خلفية فاتحة */
+  text-align: center;
+  padding: 20px 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.specializations h2 {
+  font-size: 32px;
+  color: #000000; /* لون النص */
+  margin-bottom: 30px;
+}
+
+/* تنسيق العروض الخاصة */
+.special-offers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* يسمح بتغيير توزيع العروض عند الشاشات الأصغر */
+}
+
+.offer {
+  background-color: #646b1d; /* لون خلفية العروض */
+  color: #000000;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 30%;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف لإضافة عمق */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.offer:hover {
+  background-color: #00000079;
+  color: aquamarine; /* تغيير اللون عند التمرير */
+  transform: scale(1.05); /* تكبير العنصر قليلاً عند التمرير */
+}
+
+/* الاستجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .offer {
+    width: 45%; /* تقليل العرض على الشاشات المتوسطة */
+  }
+}
+
+@media (max-width: 480px) {
+  .offer {
+    width: 100%; /* العرض بالكامل على الشاشات الصغيرة */
+  }
+}

@@ -1,0 +1,61 @@
+/* تنسيق شريط التنقل */
+/* التنسيق الأساسي لشريط التنقل */
+nav {
+  background-color: #333;
+  padding: 10px 20px;
+  margin: 0px 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* التفاف العناصر عند الحاجة */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #61dafb;
+  color: #333;
+  border-radius: 4px;
+}
+
+/* الاستجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* تغيير التخطيط إلى عمودي على الشاشات الصغيرة */
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 2px 0; /* زيادة المسافات بين عناصر القائمة على الشاشات الصغيرة */
+  }
+
+  nav ul li a {
+    font-size: 16px; /* تقليل حجم النص على الشاشات الصغيرة */
+    padding: 10px 20px; /* ضبط الحشو */
+  }
+}
+
+/* استجابة مخصصة لشاشات الهواتف المحمولة */
+@media (max-width: 480px) {
+  nav ul li a {
+    font-size: 14px; /* تقليل حجم الخط على الهواتف */
+    padding: 2px 6px;
+  }
+}
